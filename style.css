@@ -17,7 +17,7 @@ ul {
   display: grid;
   height: 100vh;
   grid-template-columns: 0.8fr 3fr 1fr;
-  grid-template-rows: 0.5fr 4fr;
+  grid-template-rows: 0.3fr 4fr;
   grid-template-areas:
     "logo header header"
     "sidebar main more";
@@ -111,6 +111,7 @@ input {
 .main {
   grid-area: main;
   margin: 0 0 0 40px;
+  overflow: auto;
 }
 
 .titles {
@@ -251,6 +252,10 @@ input {
   margin: 0 40px;
 }
 
+.titles > p {
+  font-weight: 700;
+}
+
 .media-box {
   display: grid;
   grid-template-rows: repeat(2, minmax(150px, 1fr));
@@ -370,6 +375,12 @@ input {
   padding-right: 25px;
   position: relative;
   font-size: 0.8rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.view-all:hover {
+  color: var(--hotpink);
+  transform: scale(1.2);
 }
 
 .view-all::after {
