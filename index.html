@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">Stream</div>
+
+      <header>
+        <nav>
+          <div>Dashboard</div>
+
+          <select name="category" id="category">
+            <option value="category">Category</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+            <option value="action">Action</option>
+          </select>
+
+          <select name="language" id="language">
+            <option value="language">Language</option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="swedish">Swedish</option>
+          </select>
+
+          <input type="text" placeholder="Search" />
+        </nav>
+
+        <div class="notification">
+          <div><i class="fa-solid fa-comment"></i></div>
+          <div><i class="fa-solid fa-bell"></i></div>
+        </div>
+      </header>
+
+      <div class="main">
+        <section class="popular">
+          <div class="titles">
+            <p>Popular Movies</p>
+            <a href="" class="view-all">View all</a>
+          </div>
+          <div class="popular-movies">
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+        <section class="recommended">
+          <div class="titles">
+            <p>Recommended for You</p>
+            <a href="" class="view-all">View all</a>
+          </div>
+          <div class="recommended-movies">
+            <div class="movie1">
+              <div class="cover"></div>
+              <div class="movie-info">
+                <div class="title">
+                  <div class="name">Fantastic Beasts</div>
+                  <div class="year">2016</div>
+                </div>
+                <div class="categ">Fantasy/Adventure</div>
+                <div class="trailer">
+                  <a href="" class="trailer-link"
+                    ><i class="fa-solid fa-clapperboard"></i>Watch trailer</a
+                  >
+                  <span class="review">
+                    <i class="fa-solid fa-star"></i>5.0</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="movie2">
+              <div class="cover"></div>
+              <div class="movie-info">
+                <div class="title">
+                  <div class="name">Lisey's Story</div>
+                  <div class="year">2021</div>
+                </div>
+                <div class="categ">Drama</div>
+                <div class="trailer">
+                  <a href="" class="trailer-link"
+                    ><i class="fa-solid fa-clapperboard"></i>Watch trailer</a
+                  >
+                  <span class="review">
+                    <i class="fa-solid fa-star"></i>5.0</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="movie3">
+              <div class="cover"></div>
+              <div class="movie-info">
+                <div class="title">
+                  <div class="name">Pan's Labyrinth</div>
+                  <div class="year">2006</div>
+                </div>
+                <div class="categ">Fantasy/Drama</div>
+                <div class="trailer">
+                  <a href="" class="trailer-link"
+                    ><i class="fa-solid fa-clapperboard"></i>Watch trailer</a
+                  >
+                  <span class="review">
+                    <i class="fa-solid fa-star"></i>5.0</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="movie4">
+              <div class="cover"></div>
+              <div class="movie-info">
+                <div class="title">
+                  <div class="name">Princess Mononoke</div>
+                  <div class="year">1997</div>
+                </div>
+                <div class="categ">Fantasy/Adventure</div>
+                <div class="trailer">
+                  <a href="" class="trailer-link"
+                    ><i class="fa-solid fa-clapperboard"></i>Watch trailer</a
+                  >
+                  <span class="review">
+                    <i class="fa-solid fa-star"></i>5.0</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="sidebar">
+        <ul class="sidenav">
+          <li><i class="fa-solid fa-list-ul"></i>Dashboard</li>
+          <li><i class="fa-regular fa-circle-play"></i>Playlist</li>
+          <li><i class="fa-solid fa-film"></i>Movie</li>
+          <li><i class="fa-solid fa-tv"></i>TV Show</li>
+          <li><i class="fa-regular fa-heart"></i>Recommended</li>
+        </ul>
+
+        <div class="admin">
+          <div class="profile-picture"></div>
+          <div class="user-name">Kaz Monroy</div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </section>
+      <div class="more">
+        <section class="series">
+          <div class="titles">
+            <p>Series</p>
+            <a href="" class="view-all">View all</a>
+          </div>
+          <div class="media-box">
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+
+        <section class="keep-watching">
+          <div class="titles">
+            <p>Keep Watching</p>
+          </div>
+          <div class="media-box">
+            <div class="cover"></div>
+            <div class="media-info">
+              <div class="title">
+                <div class="name">Movie1</div>
+                <div class="year">2020</div>
+              </div>
+              <div class="categ">Action</div>
+              <div class="trailer">
+                <span>200 reviews</span>
+                <span class="review"> <i class="fa-solid fa-star"></i>5.0</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
