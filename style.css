@@ -296,14 +296,17 @@ input {
   display: flex;
   border: 1px solid var(--grey);
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .keep-watching > .media-box > .media-info {
   display: flex;
+  justify-content: flex-start;
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  margin-right: 25px;
+  margin-right: 10px;
+  margin-left: -15px;
 }
 
 /* sidebar */
