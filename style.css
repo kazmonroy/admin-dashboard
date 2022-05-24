@@ -32,7 +32,6 @@ header {
 .logo {
   grid-area: logo;
   background-color: var(--grey);
-
   font-weight: 700;
   display: grid;
   justify-content: center;
@@ -118,10 +117,6 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.titles > p:first-child {
-  font-weight: 700;
 }
 
 .popular-movies {
@@ -228,7 +223,6 @@ input {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-
   font-weight: 700;
 }
 
@@ -245,7 +239,7 @@ input {
 
 .review {
   /* color: #fcb43c; */
-  color: var(--hotpink);
+  color: var(--light-pink);
 }
 
 /* Series */
@@ -320,6 +314,21 @@ input {
 .sidenav > li {
   margin-top: 25px;
   cursor: pointer;
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+}
+
+.hover {
+  background: linear-gradient(var(--hotpink) 0 0) no-repeat var(--p, 200%) 100% /
+    200% var(--p, 0.08em);
+
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+.hover:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: var(--grey);
 }
 
 .sidebar li > svg {
